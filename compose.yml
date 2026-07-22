@@ -254,7 +254,7 @@ services:  # 所有服务定义入口（db/backend/frontend 等都在此声明�
   # ══════════════════════════════════════════════════════════════════════
 
   temporal:  # Temporal Server（auto-setup 镜像，自带 PG 持久化层）
-    image: temporalio/auto-setup:1.24
+    image: temporalio/auto-setup:1.29
     restart: always
     networks:
       - default
