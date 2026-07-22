@@ -300,7 +300,7 @@ services:  # 所有服务定义入口（db/backend/frontend 等都在此声明�
       - traefik.http.routers.${STACK_NAME?Variable not set}-temporal-ui-http.middlewares=https-redirect
 
   neo4j:  # CPG 持久化（v3.0 §2.4）
-    image: neo4j:5.20-community
+    image: neo4j:5.26-community
     restart: always
     networks:
       - default
